@@ -2,6 +2,7 @@
   "name": "hyper",
   "private": true,
   "version": "1.0.0",
+  "author": "krovorgen@gmail.com",
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
