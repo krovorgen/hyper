@@ -1,4 +1,40 @@
 body {
-  color: var(--text-light-secondary);
-  background-color: var(--bg-color);
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 135%;
+  background-color: #fff;
+  font-optical-sizing: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #0032af;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0032afff;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: #0032af #f1f1f1;
+  scrollbar-width: thin;
 }

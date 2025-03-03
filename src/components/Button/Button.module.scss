@@ -1,0 +1,98 @@
+@import "../../scss/helpers/variables";
+@import "../../scss/helpers/mixins";
+
+.btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.addons {
+  padding: 0;
+
+  svg {
+    margin: 0;
+  }
+
+  &Left {
+    svg {
+      margin: 0 8px 0 0;
+    }
+  }
+
+  &Right {
+    svg {
+      margin: 0 0 0 8px;
+    }
+  }
+}
+
+.sm {
+  padding: 0 16px;
+  min-height: 43px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.md {
+  padding: 0 16px;
+  min-height: 51px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.primary {
+  border: 1px solid var(--Colors-mint, #4297ac);
+  border-radius: 4px;
+  box-shadow: 0 -1px 3px 2px rgba(255, 255, 255, 0.24) inset;
+  color: var(--Text_colors-Button-primary, #fff);
+  background-image: linear-gradient(94deg, #4066c4 0%, #1644b6 27.85%, #0436b0 52%, #0946ae 74.59%, #1763ac 100%);
+
+  &:hover {
+    border: 1px solid #4297ac;
+    box-shadow: 0 3px 19px 0 rgba(57, 97, 194, 0.83), 0 -1px 3px 2px rgba(255, 255, 255, 0.24) inset;
+    background-image: linear-gradient(94deg, #4066c4 0%, #1644b6 27.85%, #0436b0 52%, #0946ae 74.59%, #1763ac 100%);
+  }
+
+  &:active {
+    box-shadow: 3px -3px 12px 0 rgba(0, 0, 0, 0.25) inset;
+    background-image: linear-gradient(94deg, #4066c4 0%, #1644b6 27.85%, #0436b0 52%, #0946ae 74.59%, #1763ac 100%);
+  }
+}
+
+.secondary {
+  border: 1px solid var(--Stroke_colors-button_secondary, #0032af);
+  border-radius: 4px;
+  box-shadow: 0 -1px 3px 2px rgba(255, 255, 255, 0.24) inset;
+  color: var(--Text_colors-Link, #0032af);
+  background-color: transparent;
+
+  &:hover {
+    border: 1px solid #4297ac;
+    box-shadow: 0 3px 19px 0 rgba(57, 97, 194, 0.83), 0 -1px 3px 2px rgba(255, 255, 255, 0.24) inset;
+    color: var(--Text_colors-Button-primary, #fff);
+    background-image: linear-gradient(94deg, #4066c4 0%, #1644b6 27.85%, #0436b0 52%, #0946ae 74.59%, #1763ac 100%);
+  }
+
+  &:active {
+    box-shadow: 3px -3px 12px 0 rgba(0, 0, 0, 0.25) inset;
+    color: var(--Text_colors-Button-primary, #fff);
+    background-image: linear-gradient(94deg, #4066c4 0%, #1644b6 27.85%, #0436b0 52%, #0946ae 74.59%, #1763ac 100%);
+  }
+}
+
+.block {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}

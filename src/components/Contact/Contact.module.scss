@@ -1,0 +1,81 @@
+@import "../../scss/helpers/mixins";
+@import "../../scss/helpers/variables";
+
+.root {
+  margin-bottom: 120px;
+
+  @include media($sm) {
+    margin-bottom: 72px;
+  }
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H2, 32px);
+  line-height: 130%;
+  letter-spacing: -0.96px;
+  text-align: center;
+  color: #000;
+}
+
+.text {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 140%;
+  text-align: center;
+  color: var(--Text_colors-Secondary, #53575e);
+
+  @include media($sm) {
+    margin-bottom: 28px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  gap: 14px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media($sm) {
+    gap: 12px;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  @include media($sm) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 140%;
+  color: var(--Text_colors-Link, #0032af);
+  gap: 12px;
+}
+
+.icon {
+
+}

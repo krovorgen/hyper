@@ -1,0 +1,58 @@
+@import "../../scss/helpers/variables";
+@import "../../scss/helpers/mixins";
+
+.root {
+  margin-bottom: 120px;
+
+  @include media($sm) {
+    margin-bottom: 56px;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-radius: 6px;
+  background-color: var(--Backgrounds-Card-2, #f3f7fc);
+
+  @include media($sm) {
+    padding: 24px 16px;
+  }
+}
+
+.text {
+  margin-right: auto;
+  margin-bottom: 32px;
+  margin-left: auto;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H4, 20px);
+  line-height: 150%; /* 30px */
+  text-align: center;
+  color: #1a1b1d;
+
+  @include media($sm) {
+    margin-bottom: 20px;
+  }
+}
+
+.navs {
+  display: flex;
+  gap: 16px;
+
+  @include media($sm) {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  > button {
+    width: 185px;
+
+    @include media($sm) {
+      width: 100% !important;
+    }
+  }
+}

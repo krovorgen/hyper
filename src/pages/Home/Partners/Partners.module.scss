@@ -1,0 +1,124 @@
+@import "../../../scss/helpers/variables";
+@import "../../../scss/helpers/mixins";
+
+.root {
+  margin-bottom: 120px;
+
+  @include media($sm) {
+    margin-bottom: 72px;
+  }
+}
+
+.inner {
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.swiper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1048px;
+
+  @include media($xl) {
+    max-width: 100%;
+  }
+}
+
+.wrap {
+  display: flex;
+  padding: 40px 74px;
+  border-radius: 6px;
+  background-color: var(--Backgrounds-Card-2, #f3f7fc);
+  gap: 16px;
+
+  @include media($xl) {
+    padding: 24px 16px;
+  }
+
+  @include media($md) {
+    flex-direction: column;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 269px;
+  max-width: 269px;
+}
+
+.logo {
+  margin-bottom: 16px;
+}
+
+.info {
+  margin-top: auto;
+}
+
+.name {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H4, 20px);
+  line-height: 150%;
+  color: #000;
+
+  @include media($sm) {
+    font-size: 14px;
+  }
+}
+
+.bio {
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 135%; /* 18.9px */
+  color: #676767;
+}
+
+.text {
+  p {
+    font-weight: 400;
+    font-size: var(--Text-sizes-H4, 20px);
+    line-height: 155%;
+    color: var(--Text_colors-Secondary, #53575e);
+
+    @include media($sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+.navs {
+  @include media($xl) {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 56px;
+  }
+}
+
+.nav {
+  @include min-media($xl) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &Left {
+    @include min-media($xl) {
+      left: 0;
+    }
+  }
+
+  &Right {
+    @include min-media($xl) {
+      right: 0;
+    }
+  }
+}
+
+.btn {
+  @include media($sm) {
+    width: 100% !important;
+  }
+}

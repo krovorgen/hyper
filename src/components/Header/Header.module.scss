@@ -1,0 +1,89 @@
+@import "../../scss/helpers/variables";
+@import "../../scss/helpers/mixins";
+
+.header {
+  padding-top: 24px;
+
+  @include media($md) {
+    padding-top: 12px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  img {
+    display: block;
+    height: auto;
+  }
+}
+
+.nav {
+  @include media($md) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 46px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &Open {
+    transform: translateX(0);
+  }
+}
+
+.items {
+  display: flex;
+  gap: 32px;
+
+  @include media($md) {
+    flex-direction: column;
+  }
+}
+
+.item {
+
+}
+
+.link {
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 135%;
+  color: var(--Text_colors-Secondary, #53575e);
+
+  &:hover {
+    color: var(--Text_colors-Third, #a9abaf);
+  }
+
+  &Active {
+    color: var(--Text_colors-Third, #a9abaf);
+  }
+}
+
+.burger {
+  display: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  font-size: 24px;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include media($md) {
+    display: block;
+  }
+}

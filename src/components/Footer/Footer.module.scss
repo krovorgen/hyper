@@ -1,0 +1,170 @@
+@import "../../scss/helpers/variables";
+@import "../../scss/helpers/mixins";
+
+.footer {
+  padding-top: 64px;
+  padding-bottom: 48px;
+  background-color: #f3f7fc;
+
+  @include media($md) {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  gap: 115px;
+
+  @include media($lg) {
+    gap: 32px;
+  }
+
+  @include media($md) {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+
+.block {
+  @include media($md) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.logo {
+  display: block;
+  margin-bottom: 12px;
+
+  @include media($md) {
+    margin-bottom: 0;
+  }
+}
+
+.address {
+  max-width: 238px;
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 135%;
+  color: var(--Text_colors-Primary, #222325);
+}
+
+.items {
+  display: flex;
+  gap: 128px;
+
+  @include media($lg) {
+    gap: 24px;
+  }
+
+  @include media($md) {
+    display: grid;
+    grid-gap: 20px 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.item {
+
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include media($md) {
+    gap: 16px;
+  }
+}
+
+.element {
+
+}
+
+.link {
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 135%;
+  color: var(--Text_colors-Primary, #222325);
+}
+
+.wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+
+  @include media($md) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.partners {
+  &Text {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: var(--Text-sizes-Body, 14px);
+    line-height: 135%;
+    color: var(--Text_colors-Secondary, #53575e);
+
+    @include media($md) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &Logos {
+    display: flex;
+    gap: 16px;
+  }
+
+  &Logo {
+    display: block;
+  }
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+
+  @include media($md) {
+    order: 1;
+    gap: 12px;
+  }
+
+  &Privacy {
+    font-weight: 400;
+    font-size: var(--Text-sizes-Body, 14px);
+    line-height: 135%;
+    color: var(--Text_colors-Third, #a9abaf);
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+
+  &Text {
+    font-weight: 400;
+    font-size: var(--Text-sizes-Body, 14px);
+    line-height: 135%;
+    color: var(--Text_colors-Third, #a9abaf);
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.social {
+
+}

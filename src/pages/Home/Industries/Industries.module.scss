@@ -1,0 +1,23 @@
+@import "../../../scss/helpers/variables";
+@import "../../../scss/helpers/mixins";
+
+.root {
+  margin-bottom: 120px;
+
+  @include media($sm) {
+    margin-bottom: 72px;
+  }
+}
+
+.title {
+  margin-bottom: 80px;
+
+  @include media($sm) {
+    margin-bottom: 40px;
+  }
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}

@@ -1,22 +1,28 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Format from "./pages/Format";
-import Solutions from "./pages/Solutions";
-import InventoryData from "./pages/InventoryData";
-import About from "./pages/About";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Home } from './pages/Home/Home.tsx';
+import { Format } from './pages/Format/Format.tsx';
+import { Solutions } from './pages/Solutions/Solutions.tsx';
+import { InventoryData } from './pages/InventoryData/InventoryData.tsx';
+import { About } from './pages/About/About.tsx';
 import './scss/index.scss';
+import { RoutePaths } from './constants';
+import { JSX } from 'react';
+import { Layout } from './layouts/Layout/Layout.tsx';
 
-export default function App(): JSX.Element {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/format" element={<Format />} />
-                <Route path="/solutions" element={<Solutions />} />
-                <Route path="/inventory-data" element={<InventoryData />} />
-                <Route path="/about" element={<About />} />
-            </Routes>
-        </Router>
-    );
-}
+const router = createBrowserRouter([
+  {
+    path: RoutePaths.HOME,
+    element: <Layout />,
+    children: [
+      { path: RoutePaths.HOME, element: <Home /> },
+      { path: RoutePaths.FORMAT, element: <Format /> },
+      { path: RoutePaths.SOLUTIONS, element: <Solutions /> },
+      { path: RoutePaths.INVENTORY_DATA, element: <InventoryData /> },
+      { path: RoutePaths.ABOUT, element: <About /> },
+    ],
+  },
+]);
 
+export const App = (): JSX.Element => {
+  return <RouterProvider router={router} />;
+};
