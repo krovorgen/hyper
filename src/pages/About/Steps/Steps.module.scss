@@ -1,0 +1,86 @@
+@import "../../../scss/helpers/variables";
+@import "../../../scss/helpers/mixins";
+
+.root {
+}
+
+.items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 120px;
+  padding-bottom: 160px;
+  max-width: 912px;
+  gap: 24px;
+
+  @include media($lg) {
+    padding-top: 32px;
+    padding-bottom: 56px;
+    gap: 8px;
+  }
+}
+
+.item {
+  padding: 24px 32px;
+  max-width: 416px;
+  border-radius: 6px;
+  background-color: var(--Backgrounds-Card-2, #f3f7fc);
+
+  @include media($sm) {
+    padding: 16px;
+  }
+
+  &:nth-child(even) {
+    margin-left: auto;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H4, 20px);
+  line-height: 150%;
+  color: var(--Text_colors-Primary, #222325);
+
+  @include media($sm) {
+    margin-bottom: 12px;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 140%;
+  color: var(--Text_colors-Secondary, #53575e);
+}
+
+.arrow {
+  position: absolute;
+  z-index: 1;
+
+  @include media($lg) {
+    display: none;
+  }
+
+  &Top {
+    left: 170px;
+    top: 8px;
+  }
+
+  &Middle {
+    left: 408px;
+    top: 200px;
+  }
+
+  &Bottom {
+    left: 185px;
+    bottom: 361px;
+  }
+
+  &Footer {
+    left: 194px;
+    bottom: -9px;
+  }
+}

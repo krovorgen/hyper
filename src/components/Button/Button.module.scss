@@ -96,3 +96,9 @@
   margin-left: auto;
   width: fit-content;
 }
+
+.fullMobile {
+  @include media($sm) {
+    width: 100%;
+  }
+}

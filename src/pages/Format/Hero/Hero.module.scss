@@ -1,2 +1,79 @@
 @import "../../../scss/helpers/variables";
 @import "../../../scss/helpers/mixins";
+
+.root {
+  margin-top: 96px;
+  margin-bottom: 120px;
+
+  @include media($lg) {
+    margin-top: 48px;
+    margin-bottom: 56px;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+
+  @include media($lg) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.wrap {
+  margin-top: 32px;
+  max-width: 544px;
+
+  @include media($lg) {
+    margin-top: 0;
+  }
+}
+
+.title {
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H1, 48px);
+  line-height: 115%;
+  letter-spacing: -1.44px;
+  color: var(--Text_colors-Primary, #222325);
+
+  @include media($sm) {
+    margin-bottom: 8px;
+    font-size: 28px;
+  }
+
+  mark {
+    color: var(--Text_colors-Link, #0032af);
+  }
+}
+
+.text {
+  margin-bottom: 48px;
+  max-width: 390px;
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 140%;
+  color: var(--Text_colors-Secondary, #53575e);
+
+  @include media($sm) {
+    margin-bottom: 8px;
+  }
+
+  mark {
+    color: var(--Text_colors-Primary, #222325);
+  }
+}
+
+.btn {
+
+}
+
+.img {
+  margin-right: 28px;
+
+  @include media($lg) {
+    margin-right: 0;
+  }
+}

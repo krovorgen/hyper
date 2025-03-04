@@ -1,0 +1,118 @@
+@import "../../../scss/helpers/variables";
+@import "../../../scss/helpers/mixins";
+
+.root {
+  margin-bottom: 120px;
+
+  @include media($sm) {
+    margin-bottom: 56px;
+  }
+}
+
+.elements {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(6, 1fr);
+
+  @include media($lg) {
+    grid-gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media($sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.element {
+  padding: 12px 24px;
+  border-radius: 6px;
+  background-color: var(--Backgrounds-Card-2, #f3f7fc);
+}
+
+.img {
+  margin-bottom: 8px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body2, 16px);
+  line-height: 125%;
+  color: var(--Text_colors-Primary, #222325);
+}
+
+.inner {
+  padding-top: 98px;
+  padding-bottom: 112px;
+  background-image: url("../../../assets/icons/MobileApps/bg.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  @include media($lg) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-image: none;
+  }
+}
+
+.title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H1, 48px);
+  line-height: 115%;
+  letter-spacing: -1.44px;
+  text-align: center;
+  color: #000;
+
+  @include media($sm) {
+    margin-bottom: 14px;
+    font-size: 32px;
+  }
+}
+
+.descr {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 585px;
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 150%;
+  text-align: center;
+  color: var(--Text_colors-Secondary, #53575e);
+
+  mark {
+    color: var(--Text_colors-Primary, #222325);
+  }
+}
+
+.items {
+  display: flex;
+  gap: 24px;
+
+  @include media($lg) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.item {
+  padding: 20px 32px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: var(--Backgrounds-Card-2, #f3f7fc);
+}
+
+.count {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H1, 48px);
+  line-height: 115%;
+  letter-spacing: -1.44px;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(91deg, #486dcb 2.53%, #1947b7 24.43%, #0638b1 50.62%, #0945af 73.01%, #3572af 97.77%);
+  background-clip: text;
+
+  @include media($sm) {
+    font-size: 32px;
+  }
+}

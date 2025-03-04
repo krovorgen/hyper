@@ -1,0 +1,69 @@
+@import "../../../scss/helpers/variables";
+@import "../../../scss/helpers/mixins";
+
+.root {
+  margin-bottom: 88px;
+  padding-top: 48px;
+  padding-bottom: 72px;
+  background-color: var(--Backgrounds-Card-2, #f3f7fc);
+
+  @include media($sm) {
+    margin-bottom: 56px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H2, 32px);
+  line-height: 130%;
+  letter-spacing: -0.96px;
+  color: #000;
+
+  @include media($sm) {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+}
+
+.items {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include media($lg) {
+    grid-gap: 14px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.item {
+  padding: 20px 32px;
+  border-radius: 6px;
+  background-color: #fff;
+
+  @include media($sm) {
+    padding: 20px 16px;
+  }
+}
+
+.img {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H4, 20px);
+  line-height: 150%;
+  color: var(--Text_colors-Primary, #222325);
+}
+
+.text {
+  font-style: normal;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 140%; /* 19.6px */
+  color: var(--Text_colors-Secondary, #53575e);
+}

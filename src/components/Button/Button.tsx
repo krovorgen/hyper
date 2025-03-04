@@ -8,6 +8,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: 'sm' | 'md';
   center?: boolean;
   block?: boolean;
+  fullOnMobile?: boolean;
   leftAddons?: ReactNode;
   rightAddons?: ReactNode;
 };
@@ -17,6 +18,7 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
     variant = 'primary',
     type = 'button',
     size = 'md',
+    fullOnMobile = true,
     center,
     className,
     leftAddons,
@@ -35,6 +37,7 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
         [styles.addons]: (leftAddons || rightAddons) && !children,
         [styles.block]: block,
         [styles.center]: center,
+        [styles.fullMobile]: fullOnMobile,
       })}
       {...buttonProps}
     >
