@@ -7,7 +7,7 @@ type Props = {};
 export const Hero: FC<Props> = () => {
   return (
     <div className={styles.root}>
-      <div className="container">Hero</div>
+      <div className="container">peredelka</div>
     </div>
   );
 };
