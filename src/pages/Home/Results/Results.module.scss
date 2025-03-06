@@ -42,6 +42,7 @@
 .left {
   padding: 32px 40px;
   width: 100%;
+  max-width: 588px;
   border-radius: 6px;
   background-color: var(--Backgrounds-Card-2, #f3f7fc);
 
@@ -53,7 +54,7 @@
 .pretitle {
   margin-bottom: 24px;
   font-weight: 400;
-  font-size: var(--Text-sizes-Body, 14px);
+  font-size: var(--Text-sizes-Body, 12px);
   line-height: 135%;
   color: var(--Text_colors-Third, #a9abaf);
 
