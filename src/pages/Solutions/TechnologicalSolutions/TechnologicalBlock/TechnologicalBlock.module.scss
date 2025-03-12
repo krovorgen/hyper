@@ -1,0 +1,66 @@
+@import "../../../../scss/helpers/variables";
+@import "../../../../scss/helpers/mixins";
+
+.root {
+
+}
+
+.wrap {
+  display: flex;
+  gap: 56px;
+
+  @include media($sm) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &Center {
+    align-items: center;
+
+    @include media($sm) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.left {
+  width: 100%;
+  max-width: 590px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H4, 20px);
+  line-height: 150%;
+  color: #1a1b1d;
+}
+
+.text {
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body2, 16px);
+  line-height: 145%;
+  color: var(--Text_colors-Secondary, #53575e);
+
+  b {
+    font-weight: 600;
+    color: var(--Text_colors-Primary, #222325);
+  }
+}
+
+.right {
+  width: 100%;
+  max-width: 494px;
+}
+
+.box {
+  margin-top: 32px;
+}
+
+.subtitle {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+  color: var(--Text_colors-Primary, #222325);
+}

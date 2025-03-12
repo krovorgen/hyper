@@ -6,6 +6,7 @@ import { Footer } from '../../components/Footer/Footer.tsx';
 import styles from './Layout.module.scss';
 import { RoutePaths } from '../../constants';
 import cn from 'classnames';
+import { ScrollToTop } from '../../components/ScrollToTop/ScrollToTop.tsx';
 
 type Props = {};
 
@@ -16,6 +17,7 @@ export const Layout: FC<Props> = () => {
   return (
     <div className={cn(styles.root, { [styles.ellipse]: isAboutPage })}>
       <Header />
+      <ScrollToTop />
       <main>
         <Outlet />
       </main>

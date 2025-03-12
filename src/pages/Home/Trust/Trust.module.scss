@@ -72,6 +72,16 @@
 
 }
 
+.customTooltip {
+  padding: 16px 24px !important;
+  max-width: 300px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  color: #53575e !important;
+  background-color: #f3f7fc !important;
+}
+
 .mobileItems {
   display: grid;
   grid-gap: 24px 16px;

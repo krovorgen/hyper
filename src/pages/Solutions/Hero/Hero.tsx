@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
 import styles from './Hero.module.scss';
-import { Button } from '../../../components/Button/Button.tsx';
 import heroImg from '../../../assets/images/pages/Solutions/Hero/bg.png';
+import { MediaplanButton } from '../../../components/MediaplanButton/MediaplanButton.tsx';
 
 type Props = {};
 
@@ -17,9 +17,7 @@ export const Hero: FC<Props> = () => {
               Собственные технологии и поддерживаемые решения Hyper AdTech нацелены на отбор качественного рекламного
               инвентаря и анализ результативности кампаний
             </p>
-            <Button className={styles.btn} variant="primary">
-              Запустить кампанию
-            </Button>
+            <MediaplanButton classButton={styles.btn} textButton="Запустить кампанию" />
           </div>
           <div className={styles.img}>
             <img src={heroImg} width={472} height={338} alt="" />

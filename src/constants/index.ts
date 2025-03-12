@@ -4,4 +4,5 @@ export enum RoutePaths {
   SOLUTIONS = '/solutions',
   INVENTORY_DATA = '/inventory-data',
   ABOUT = '/about',
+  POLICY = '/policy',
 }

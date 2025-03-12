@@ -1,0 +1,53 @@
+@import "../../scss/helpers/variables";
+@import "../../scss/helpers/mixins";
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 102;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.7);
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  padding-top: 32px;
+  width: 100%;
+  max-width: 750px;
+  overflow: auto;
+  border-radius: 12px;
+  background-color: #fff;
+
+  @include media($sm) {
+    padding-top: 16px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.content {
+  padding: 0 40px 32px;
+  overflow: auto;
+
+  @include media($sm) {
+    padding: 0 16px 16px;
+  }
+}

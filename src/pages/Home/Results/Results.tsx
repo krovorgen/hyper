@@ -3,7 +3,7 @@ import { FC, ReactNode } from 'react';
 import styles from './Results.module.scss';
 import cn from 'classnames';
 import { Title } from '../../../components/Title/Title.tsx';
-import { Button } from '../../../components/Button/Button.tsx';
+import { MediaplanButton } from '../../../components/MediaplanButton/MediaplanButton.tsx';
 
 type Props = {};
 
@@ -136,9 +136,8 @@ export const Results: FC<Props> = () => {
             </li>
           ))}
         </ul>
-        <Button className={styles.btn} center>
-          Стать успешным кейсом
-        </Button>
+
+        <MediaplanButton classButton={styles.btn} isCenterButton textButton="Стать успешным кейсом" />
       </div>
     </div>
   );

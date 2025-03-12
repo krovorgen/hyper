@@ -6,6 +6,6 @@ import { pluginSvgr } from '@rsbuild/plugin-svgr';
 export default defineConfig({
   plugins: [pluginReact(), pluginSass(), pluginSvgr()],
   html: {
-    title: 'Страница',
+    title: 'Hyper',
   },
 });

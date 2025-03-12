@@ -1,0 +1,114 @@
+@import "../../scss/helpers/variables";
+@import "../../scss/helpers/mixins";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &Item {
+
+  }
+
+  &Box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include media($md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.title {
+  max-width: 328px;
+  font-weight: 600;
+  font-size: var(--Text-sizes-H3, 28px);
+  line-height: 130%;
+  color: var(--Text_colors-Primary, #222325);
+
+  @include media($sm) {
+    width: 90%;
+    font-size: 20px;
+  }
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+  color: var(--Text_colors-Primary, #222325);
+
+  @include media($sm) {
+    font-size: 14px;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &Row {
+    display: flex;
+    gap: 16px;
+
+    @include media($sm) {
+      flex-direction: column;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-gap: 12px 40px;
+
+  @include media($md) {
+    overflow-x: auto;
+  }
+
+  @include media($sm) {
+    grid-gap: 12px 24px;
+  }
+
+  &3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.custom {
+  margin-top: 16px;
+}
+
+.checkbox {
+  span {
+    white-space: nowrap;
+  }
+}
+
+.text {
+  max-width: 372px;
+  font-weight: 400;
+  font-size: var(--Text-sizes-Body, 14px);
+  line-height: 140%;
+  color: var(--Text_colors-Third, #a9abaf);
+
+  @include media($sm) {
+    font-size: 12px;
+  }
+
+  a {
+    color: var(--Text_colors-Link, #0032af);
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+}

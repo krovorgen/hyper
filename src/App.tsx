@@ -8,6 +8,7 @@ import './scss/index.scss';
 import { RoutePaths } from './constants';
 import { JSX } from 'react';
 import { Layout } from './layouts/Layout/Layout.tsx';
+import { Policy } from './pages/Policy/Policy.tsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: RoutePaths.SOLUTIONS, element: <Solutions /> },
       { path: RoutePaths.INVENTORY_DATA, element: <InventoryData /> },
       { path: RoutePaths.ABOUT, element: <About /> },
+      { path: RoutePaths.POLICY, element: <Policy /> },
     ],
   },
 ]);

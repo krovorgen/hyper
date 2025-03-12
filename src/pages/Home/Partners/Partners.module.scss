@@ -38,6 +38,10 @@
   @include media($md) {
     flex-direction: column;
   }
+
+  &First {
+    min-height: 180px;
+  }
 }
 
 .left {

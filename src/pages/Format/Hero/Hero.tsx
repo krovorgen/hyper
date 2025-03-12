@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
 import styles from './Hero.module.scss';
-import { Button } from '../../../components/Button/Button.tsx';
 import heroImg from '../../../assets/images/pages/Format/Hero/bg.png';
+import { MediaplanButton } from '../../../components/MediaplanButton/MediaplanButton.tsx';
 
 type Props = {};
 
@@ -19,9 +19,7 @@ export const Hero: FC<Props> = () => {
               <mark>Все рекламные форматы Hyper AdTech – fullscreen</mark>, т.е воспроизводятся на весь экран мобильного
               устройства с адаптацией под горизонтальную и вертикальную ориентацию мобильных приложений
             </p>
-            <Button className={styles.btn} variant="primary">
-              Запустить кампанию
-            </Button>
+            <MediaplanButton classButton={styles.btn} textButton="Запустить кампанию" />
           </div>
           <div className={styles.img}>
             <img src={heroImg} width={549} height={338} alt="" />

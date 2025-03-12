@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import styles from './Feedback.module.scss';
 import { Button } from '../Button/Button.tsx';
+import { MediaplanButton } from '../MediaplanButton/MediaplanButton.tsx';
 
 type Props = {
   title: string;
@@ -17,7 +18,7 @@ export const Feedback: FC<Props> = ({ title, maxWidth }) => {
             {title}
           </p>
           <div className={styles.navs}>
-            <Button variant="primary">Запустить кампанию</Button>
+            <MediaplanButton textButton="Запустить кампанию" />
             <Button variant="secondary">Задать вопрос</Button>
           </div>
         </div>

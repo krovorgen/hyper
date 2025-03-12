@@ -89,11 +89,10 @@ export const Footer: FC<Props> = () => {
           </div>
 
           <div className={styles.copyright}>
-            <a href="/privacy-policy" className={styles.copyrightPrivacy}>
+            <NavLink to={RoutePaths.POLICY} className={styles.copyrightPrivacy}>
               Политика конфиденциальности
-            </a>
+            </NavLink>
             <p className={styles.copyrightText}>Все права защищены © Hyper AdTech, 2024</p>
-            <p className={styles.copyrightText}>Designed by ShkuratovDesigner</p>
           </div>
 
           <div className={styles.socials}>

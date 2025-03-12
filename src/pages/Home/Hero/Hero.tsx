@@ -1,10 +1,11 @@
 import { FC } from 'react';
 
-import { Button } from '../../../components/Button/Button.tsx';
 import heroImgDesktop from '../../../assets/images/pages/Home/Hero/bg-desktop.png';
 import cn from 'classnames';
 
 import styles from './Hero.module.scss';
+import { MediaplanButton } from '../../../components/MediaplanButton/MediaplanButton.tsx';
+
 type Props = {};
 
 export const Hero: FC<Props> = () => {
@@ -27,9 +28,7 @@ export const Hero: FC<Props> = () => {
                 Собственное <mark>DMP</mark>
               </li>
             </ul>
-            <Button className={styles.btn} variant="primary">
-              Получить медиаплан
-            </Button>
+            <MediaplanButton classButton={styles.btn} textButton="Получить медиаплан" />
           </div>
           <div className={styles.wrap}>
             <ul className={styles.elements}>
