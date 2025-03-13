@@ -10,6 +10,9 @@ type Props = {};
 const content = [
   { id: 'tab1', label: 'Fullscreen video', src: 'https://creative-preview.cc/preview/14415337d5/' },
   { id: 'tab2', label: 'Playable Ad', src: 'https://creative-preview.cc/preview/2a8029ee70/' },
+  { id: 'tab3', label: 'Fullscreen video', src: 'https://creative-preview.cc/preview/2a8029ee70/' },
+  { id: 'tab4', label: 'Playable Ad', src: 'https://creative-preview.cc/preview/2a8029ee70/' },
+  { id: 'tab5', label: 'Fullscreen video', src: 'https://creative-preview.cc/preview/2a8029ee70/' },
 ];
 
 export const AdvertisingFormat: FC<Props> = () => {
@@ -81,6 +84,98 @@ export const AdvertisingFormat: FC<Props> = () => {
                   Fullscreen video
                 </div>
                 {activeTab === content[1].id && (
+                  <div className={styles.box}>
+                    <ul className={styles.elements}>
+                      <li className={styles.element}>Межстраничный показ 75%+ VTR</li>
+                      <li className={styles.element}>мотивированный показ за получение бонуса 90%+ VTR</li>
+                      <li className={styles.element}>95%+ Viewability</li>
+                      <li className={styles.element}>1%+ CTR</li>
+                      <li className={styles.element}>Лучшая эффективность цены за 1000 показов</li>
+                      <li className={styles.element}>Полноэкранный формат гарантирует высокую видимость</li>
+                    </ul>
+                    <button onClick={openMediaplanModal} className={styles.create}>
+                      Разместить Fullscreen video рекламу
+                    </button>
+                  </div>
+                )}
+              </li>
+              <li className={styles.item}>
+                <div
+                  className={cn(styles.btn, activeTab === content[2].id && styles.btnActive)}
+                  onClick={() => setActiveTab(content[2].id)}
+                >
+                  Fullscreen video
+                </div>
+                {activeTab === content[2].id && (
+                  <div className={styles.box}>
+                    <ul className={styles.elements}>
+                      <li className={styles.element}>Межстраничный показ 75%+ VTR</li>
+                      <li className={styles.element}>мотивированный показ за получение бонуса 90%+ VTR</li>
+                      <li className={styles.element}>95%+ Viewability</li>
+                      <li className={styles.element}>1%+ CTR</li>
+                      <li className={styles.element}>Лучшая эффективность цены за 1000 показов</li>
+                      <li className={styles.element}>Полноэкранный формат гарантирует высокую видимость</li>
+                    </ul>
+                    <button onClick={openMediaplanModal} className={styles.create}>
+                      Разместить Fullscreen video рекламу
+                    </button>
+                  </div>
+                )}
+              </li>
+              <li className={styles.item}>
+                <div
+                  className={cn(styles.btn, activeTab === content[3].id && styles.btnActive)}
+                  onClick={() => setActiveTab(content[3].id)}
+                >
+                  Fullscreen video
+                </div>
+                {activeTab === content[3].id && (
+                  <div className={styles.box}>
+                    <ul className={styles.elements}>
+                      <li className={styles.element}>Межстраничный показ 75%+ VTR</li>
+                      <li className={styles.element}>мотивированный показ за получение бонуса 90%+ VTR</li>
+                      <li className={styles.element}>95%+ Viewability</li>
+                      <li className={styles.element}>1%+ CTR</li>
+                      <li className={styles.element}>Лучшая эффективность цены за 1000 показов</li>
+                      <li className={styles.element}>Полноэкранный формат гарантирует высокую видимость</li>
+                    </ul>
+                    <button onClick={openMediaplanModal} className={styles.create}>
+                      Разместить Fullscreen video рекламу
+                    </button>
+                  </div>
+                )}
+              </li>
+              <li className={styles.item}>
+                <div
+                  className={cn(styles.btn, activeTab === content[4].id && styles.btnActive)}
+                  onClick={() => setActiveTab(content[4].id)}
+                >
+                  Fullscreen video
+                </div>
+                {activeTab === content[4].id && (
+                  <div className={styles.box}>
+                    <ul className={styles.elements}>
+                      <li className={styles.element}>Межстраничный показ 75%+ VTR</li>
+                      <li className={styles.element}>мотивированный показ за получение бонуса 90%+ VTR</li>
+                      <li className={styles.element}>95%+ Viewability</li>
+                      <li className={styles.element}>1%+ CTR</li>
+                      <li className={styles.element}>Лучшая эффективность цены за 1000 показов</li>
+                      <li className={styles.element}>Полноэкранный формат гарантирует высокую видимость</li>
+                    </ul>
+                    <button onClick={openMediaplanModal} className={styles.create}>
+                      Разместить Fullscreen video рекламу
+                    </button>
+                  </div>
+                )}
+              </li>
+              <li className={styles.item}>
+                <div
+                  className={cn(styles.btn, activeTab === content[4].id && styles.btnActive)}
+                  onClick={() => setActiveTab(content[4].id)}
+                >
+                  Fullscreen video
+                </div>
+                {activeTab === content[4].id && (
                   <div className={styles.box}>
                     <ul className={styles.elements}>
                       <li className={styles.element}>Межстраничный показ 75%+ VTR</li>
