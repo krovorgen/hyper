@@ -81,7 +81,7 @@ export const AdvertisingFormat: FC<Props> = () => {
                   className={cn(styles.btn, activeTab === content[1].id && styles.btnActive)}
                   onClick={() => setActiveTab(content[1].id)}
                 >
-                  Fullscreen video
+                  Playable Ad
                 </div>
                 {activeTab === content[1].id && (
                   <div className={styles.box}>
@@ -127,32 +127,9 @@ export const AdvertisingFormat: FC<Props> = () => {
                   className={cn(styles.btn, activeTab === content[3].id && styles.btnActive)}
                   onClick={() => setActiveTab(content[3].id)}
                 >
-                  Fullscreen video
+                  Playable Ad
                 </div>
                 {activeTab === content[3].id && (
-                  <div className={styles.box}>
-                    <ul className={styles.elements}>
-                      <li className={styles.element}>Межстраничный показ 75%+ VTR</li>
-                      <li className={styles.element}>мотивированный показ за получение бонуса 90%+ VTR</li>
-                      <li className={styles.element}>95%+ Viewability</li>
-                      <li className={styles.element}>1%+ CTR</li>
-                      <li className={styles.element}>Лучшая эффективность цены за 1000 показов</li>
-                      <li className={styles.element}>Полноэкранный формат гарантирует высокую видимость</li>
-                    </ul>
-                    <button onClick={openMediaplanModal} className={styles.create}>
-                      Разместить Fullscreen video рекламу
-                    </button>
-                  </div>
-                )}
-              </li>
-              <li className={styles.item}>
-                <div
-                  className={cn(styles.btn, activeTab === content[4].id && styles.btnActive)}
-                  onClick={() => setActiveTab(content[4].id)}
-                >
-                  Fullscreen video
-                </div>
-                {activeTab === content[4].id && (
                   <div className={styles.box}>
                     <ul className={styles.elements}>
                       <li className={styles.element}>Межстраничный показ 75%+ VTR</li>
