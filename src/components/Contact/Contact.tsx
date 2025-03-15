@@ -4,9 +4,9 @@ import styles from './Contact.module.scss';
 import { Input } from '../Input/Input.tsx';
 import { Textarea } from '../Textarea/Textarea.tsx';
 import { Button } from '../Button/Button.tsx';
-import address from '../../assets/icons/Contact/address.svg';
-import email from '../../assets/icons/Contact/email.svg';
-import phone from '../../assets/icons/Contact/phone.svg';
+import address from '../../assets/images/pages/Home/Contact/address.svg';
+import email from '../../assets/images/pages/Home/Contact/email.svg';
+import phone from '../../assets/images/pages/Home/Contact/phone.svg';
 import { toast } from 'react-toastify';
 
 type Props = {};

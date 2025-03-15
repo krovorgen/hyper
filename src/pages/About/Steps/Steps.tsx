@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
-import arrowTop from '../../../assets/icons/Steps/arrow-top.svg';
-import arrowMiddle from '../../../assets/icons/Steps/arrow-middle.svg';
-import arrowBottom from '../../../assets/icons/Steps/arrow-bottom.svg';
-import arrowFooter from '../../../assets/icons/Steps/arrow-footer.svg';
+import arrowTop from '../../../assets/images/pages/About/Steps/arrow-top.svg';
+import arrowMiddle from '../../../assets/images/pages/About/Steps/arrow-middle.svg';
+import arrowBottom from '../../../assets/images/pages/About/Steps/arrow-bottom.svg';
+import arrowFooter from '../../../assets/images/pages/About/Steps/arrow-footer.svg';
 
 import styles from './Steps.module.scss';
 import cn from 'classnames';

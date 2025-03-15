@@ -1,11 +1,11 @@
 import { FC } from 'react';
 
-import icon1 from '../../../assets/icons/MobileApps/1.svg';
-import icon2 from '../../../assets/icons/MobileApps/2.svg';
-import icon3 from '../../../assets/icons/MobileApps/3.svg';
-import icon4 from '../../../assets/icons/MobileApps/4.svg';
-import icon5 from '../../../assets/icons/MobileApps/5.svg';
-import icon6 from '../../../assets/icons/MobileApps/6.svg';
+import icon1 from '../../../assets/images/pages/InventoryData/MobileApps/1.svg';
+import icon2 from '../../../assets/images/pages/InventoryData/MobileApps/2.svg';
+import icon3 from '../../../assets/images/pages/InventoryData/MobileApps/3.svg';
+import icon4 from '../../../assets/images/pages/InventoryData/MobileApps/4.svg';
+import icon5 from '../../../assets/images/pages/InventoryData/MobileApps/5.svg';
+import icon6 from '../../../assets/images/pages/InventoryData/MobileApps/6.svg';
 
 import styles from './MobileApps.module.scss';
 

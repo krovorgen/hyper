@@ -1,15 +1,15 @@
 import { FC } from 'react';
 
-import icon1 from '../../../assets/icons/Segments/1.svg';
-import icon2 from '../../../assets/icons/Segments/2.svg';
-import icon3 from '../../../assets/icons/Segments/3.svg';
-import icon4 from '../../../assets/icons/Segments/4.svg';
-import icon5 from '../../../assets/icons/Segments/5.svg';
-import icon6 from '../../../assets/icons/Segments/6.svg';
-import icon7 from '../../../assets/icons/Segments/7.svg';
-import icon8 from '../../../assets/icons/Segments/8.svg';
-import icon9 from '../../../assets/icons/Segments/9.svg';
-import icon10 from '../../../assets/icons/Segments/10.svg';
+import icon1 from '../../../assets/images/pages/InventoryData/Segments/1.svg';
+import icon2 from '../../../assets/images/pages/InventoryData/Segments/2.svg';
+import icon3 from '../../../assets/images/pages/InventoryData/Segments/3.svg';
+import icon4 from '../../../assets/images/pages/InventoryData/Segments/4.svg';
+import icon5 from '../../../assets/images/pages/InventoryData/Segments/5.svg';
+import icon6 from '../../../assets/images/pages/InventoryData/Segments/6.svg';
+import icon7 from '../../../assets/images/pages/InventoryData/Segments/7.svg';
+import icon8 from '../../../assets/images/pages/InventoryData/Segments/8.svg';
+import icon9 from '../../../assets/images/pages/InventoryData/Segments/9.svg';
+import icon10 from '../../../assets/images/pages/InventoryData/Segments/10.svg';
 
 import styles from './Segments.module.scss';
 

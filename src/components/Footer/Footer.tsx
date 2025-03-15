@@ -5,11 +5,11 @@ import logo from '../../assets/images/logo.svg';
 import { Link, NavLink } from 'react-router-dom';
 import { RoutePaths } from '../../constants';
 
-import arirLogo from '../../assets/icons/Footer/arir.svg';
-import skLogo from '../../assets/icons/Footer/sk.svg';
-import vkLogo from '../../assets/icons/Footer/vk.svg';
-import vcLogo from '../../assets/icons/Footer/vc.svg';
-import inLogo from '../../assets/icons/Footer/in.svg';
+import arirLogo from '../../assets/images/components/Footer/arir.svg';
+import skLogo from '../../assets/images/components/Footer/sk.svg';
+import vkLogo from '../../assets/images/components/Footer/vk.svg';
+import vcLogo from '../../assets/images/components/Footer/vc.svg';
+import inLogo from '../../assets/images/components/Footer/in.svg';
 
 type Props = {};
 
