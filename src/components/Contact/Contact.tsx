@@ -8,21 +8,39 @@ import address from '../../assets/images/pages/Home/Contact/address.svg';
 import email from '../../assets/images/pages/Home/Contact/email.svg';
 import phone from '../../assets/images/pages/Home/Contact/phone.svg';
 import { toast } from 'react-toastify';
+import { useForm } from 'react-hook-form';
 
 type Props = {};
 
+type FormData = {
+  name: string;
+  email: string;
+  about: string;
+};
+
 export const Contact: FC<Props> = () => {
+  const { register, handleSubmit, reset } = useForm<FormData>();
+
+  const onSubmit = (data: FormData) => {
+    toast.success('В ближайшее время мы с Вами свяжемся!');
+    console.log(data);
+    reset();
+  };
+
   return (
     <div className={styles.root}>
       <div className="container">
         <div className={styles.inner}>
           <h2 className={styles.title}>Всегда на связи</h2>
           <p className={styles.text}>Обращайтесь по любым вопросам — ответим или перезвоним в ближайшее время</p>
-          <form className={styles.form}>
-            <Input placeholder="Фио" name="name" />
-            <Input placeholder="Email" name="email" />
-            <Textarea placeholder="Сообщите, о чём хотите узнать – в точности или общими словами" name="about" />
-            <Button onClick={() => toast('В ближайшее время мы с Вами свяжемся!')} block>
+          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+            <Input placeholder="Фио" {...register('name')} />
+            <Input placeholder="Email" {...register('email')} />
+            <Textarea
+              placeholder="Сообщите, о чём хотите узнать – в точности или общими словами"
+              {...register('about')}
+            />
+            <Button type="submit" block>
               Отправить
             </Button>
           </form>

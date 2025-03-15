@@ -28,6 +28,10 @@
   background-size: contain;
   background-repeat: no-repeat;
 
+  .container:hover & {
+    border: 1px solid var(--Stroke_colors-button_secondary, #0032af);
+  }
+
   .input:checked + & {
     border-color: var(--Stroke_colors-button_secondary, #0032af);
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m7.293 14.707-3-3a.999.999 0 1 1 1.414-1.414l2.236 2.236 6.298-7.18a.999.999 0 1 1 1.518 1.3l-7 8a1 1 0 0 1-.72.35 1.017 1.017 0 0 1-.746-.292z' fill='%23fff'/%3E%3C/svg%3E");
