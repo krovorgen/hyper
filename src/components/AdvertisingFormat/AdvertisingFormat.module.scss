@@ -3,7 +3,10 @@
 
 .root {
   margin-bottom: 120px;
-  overflow: hidden;
+
+  @include media($md) {
+    overflow: hidden;
+  }
 
   @include media($sm) {
     margin-bottom: 72px;
