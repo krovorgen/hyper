@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
-import icon1 from '../../../assets/icons/Awards/1.svg';
-import icon2 from '../../../assets/icons/Awards/2.svg';
-import icon3 from '../../../assets/icons/Awards/3.svg';
-import icon4 from '../../../assets/icons/Awards/4.svg';
+import icon1 from '../../../assets/images/pages/About/Awards/1.svg';
+import icon2 from '../../../assets/images/pages/About/Awards/2.svg';
+import icon3 from '../../../assets/images/pages/About/Awards/3.svg';
+import icon4 from '../../../assets/images/pages/About/Awards/4.svg';
 
 import styles from './Awards.module.scss';
 

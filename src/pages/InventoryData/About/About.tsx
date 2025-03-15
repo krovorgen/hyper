@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
-import icon1 from '../../../assets/icons/MobileApps/1.svg';
-import icon2 from '../../../assets/icons/MobileApps/2.svg';
-import icon3 from '../../../assets/icons/MobileApps/3.svg';
+import icon1 from '../../../assets/images/pages/InventoryData/About/1.svg';
+import icon2 from '../../../assets/images/pages/InventoryData/About/2.svg';
+import icon3 from '../../../assets/images/pages/InventoryData/About/3.svg';
 
 import styles from './About.module.scss';
 
