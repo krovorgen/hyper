@@ -3,6 +3,7 @@ import { FC } from 'react';
 import styles from './Feedback.module.scss';
 import { Button } from '../Button/Button.tsx';
 import { MediaplanButton } from '../MediaplanButton/MediaplanButton.tsx';
+import { Link } from 'react-router-dom';
 
 type Props = {
   title: string;
@@ -19,7 +20,9 @@ export const Feedback: FC<Props> = ({ title, maxWidth }) => {
           </p>
           <div className={styles.navs}>
             <MediaplanButton textButton="Запустить кампанию" />
-            <Button variant="secondary">Задать вопрос</Button>
+            <Button variant="secondary" Component="a" href="/#contact">
+              Задать вопрос
+            </Button>
           </div>
         </div>
       </div>

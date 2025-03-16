@@ -47,7 +47,7 @@ export const Awards: FC<Props> = () => {
           </li>
           <li className={styles.item}>
             <div className={styles.img}>
-              <img src={icon4} width={64} height={43} alt="" />
+              <img src={icon4} width={54} height={43} alt="" />
             </div>
             <h3 className={styles.subtitle}>Премия AdIndex Awards 2021</h3>
             <p className={styles.text} style={{ maxWidth: 436 }}>

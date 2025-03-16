@@ -28,7 +28,7 @@ export const Contact: FC<Props> = () => {
   };
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="contact">
       <div className="container">
         <div className={styles.inner}>
           <h2 className={styles.title}>Всегда на связи</h2>

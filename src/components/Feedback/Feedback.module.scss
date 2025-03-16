@@ -48,7 +48,8 @@
     gap: 20px;
   }
 
-  > button {
+  > button,
+  > a {
     width: 185px;
 
     @include media($sm) {
