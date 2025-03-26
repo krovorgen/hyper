@@ -11,7 +11,7 @@ type Props = {};
 
 export const Awards: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <h1 className={styles.title}>Награды говорят сами за себя</h1>
         <ul className={styles.items}>
@@ -57,6 +57,6 @@ export const Awards: FC<Props> = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

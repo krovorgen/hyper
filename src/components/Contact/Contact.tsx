@@ -28,7 +28,7 @@ export const Contact: FC<Props> = () => {
   };
 
   return (
-    <div className={styles.root} id="contact">
+    <section className={styles.root} id="contact">
       <div className="container">
         <div className={styles.inner}>
           <h2 className={styles.title}>Всегда на связи</h2>
@@ -64,6 +64,6 @@ export const Contact: FC<Props> = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

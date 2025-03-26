@@ -13,7 +13,7 @@ type Props = {};
 
 export const MobileApps: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <ul className={styles.elements}>
           <li className={styles.element}>
@@ -64,6 +64,6 @@ export const MobileApps: FC<Props> = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

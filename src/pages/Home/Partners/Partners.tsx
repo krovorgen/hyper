@@ -16,7 +16,7 @@ type Props = {};
 
 export const Partners: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.swiper}>
@@ -146,6 +146,6 @@ export const Partners: FC<Props> = () => {
 
         <MediaplanButton classButton={styles.btn} isCenterButton textButton="Получить медиаплан" />
       </div>
-    </div>
+    </section>
   );
 };

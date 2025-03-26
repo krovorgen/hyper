@@ -3,7 +3,6 @@ import { FC } from 'react';
 import styles from './Feedback.module.scss';
 import { Button } from '../Button/Button.tsx';
 import { MediaplanButton } from '../MediaplanButton/MediaplanButton.tsx';
-import { Link } from 'react-router-dom';
 
 type Props = {
   title: string;

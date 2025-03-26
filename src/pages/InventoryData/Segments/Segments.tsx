@@ -17,7 +17,7 @@ type Props = {};
 
 export const Segments: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <h2 className={styles.title}>Аудиторные сегменты</h2>
         <ul className={styles.items}>
@@ -78,6 +78,6 @@ export const Segments: FC<Props> = () => {
           разнообразных параметров.
         </p>
       </div>
-    </div>
+    </section>
   );
 };

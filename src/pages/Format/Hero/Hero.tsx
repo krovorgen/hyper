@@ -8,7 +8,7 @@ type Props = {};
 
 export const Hero: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.wrap}>
@@ -26,6 +26,6 @@ export const Hero: FC<Props> = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

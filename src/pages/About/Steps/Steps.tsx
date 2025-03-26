@@ -12,7 +12,7 @@ type Props = {};
 
 export const Steps: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <ul className={styles.items}>
           <img className={cn(styles.arrow, styles.arrowTop)} src={arrowTop} width={275} height={120} alt="Стрела" />
@@ -60,6 +60,6 @@ export const Steps: FC<Props> = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

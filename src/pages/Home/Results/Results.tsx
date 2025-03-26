@@ -86,7 +86,7 @@ const resultsData: ResultItem[] = [
 
 export const Results: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <Title maxWidth={584} className={styles.title}>
           Наш успех — это когда <mark>ваша реклама</mark> приносит <mark>сверхрезультаты</mark>
@@ -139,6 +139,6 @@ export const Results: FC<Props> = () => {
 
         <MediaplanButton classButton={styles.btn} isCenterButton textButton="Стать успешным кейсом" />
       </div>
-    </div>
+    </section>
   );
 };

@@ -10,7 +10,7 @@ type Props = {};
 
 export const About: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <h2 className={styles.title}>Hyper ID</h2>
         <p className={styles.descr}>Технология по определению профиля пользователя в мобильной среде</p>
@@ -53,6 +53,6 @@ export const About: FC<Props> = () => {
           основывается на следующих алгоритмах:
         </p>
       </div>
-    </div>
+    </section>
   );
 };

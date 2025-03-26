@@ -7,7 +7,7 @@ type Props = {};
 
 export const Policy: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className={cn('container', styles.container)}>
         <h1>Политика конфиденциальности персональных данных</h1>
         <p>
@@ -447,6 +447,6 @@ export const Policy: FC<Props> = () => {
           целей, Hyper сделает все возможное для соблюдения такого законодательства или договорных отношений.
         </p>
       </div>
-    </div>
+    </section>
   );
 };

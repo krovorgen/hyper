@@ -12,7 +12,7 @@ export const Hero: FC<Props> = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <h1 className={styles.title}>
           Hyper AdTech — крупнейшая в России programmatic-платформа по размещению видеорекламы в мобильной среде.
@@ -45,6 +45,6 @@ export const Hero: FC<Props> = () => {
           KPI. Охват аудитории платформы составляет более 90 млн. уникальных пользователей, по данным Mediascope.
         </p>
       </div>
-    </div>
+    </section>
   );
 };

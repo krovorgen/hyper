@@ -22,7 +22,7 @@ const statsData: { id: string; value: string; label: string; maxWidth?: number; 
 
 export const Trust: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <Title maxWidth={560} className={styles.title}>
           Занимайтесь бизнесом, а <mark>рекламу доверьте нам</mark>
@@ -129,6 +129,6 @@ export const Trust: FC<Props> = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

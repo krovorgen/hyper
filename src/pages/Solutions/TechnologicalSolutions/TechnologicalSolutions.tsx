@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, FC } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import styles from './TechnologicalSolutions.module.scss';
 import icon1 from '../../../assets/images/pages/Solutions/TechnologicalSolutions/icon-1.svg';

@@ -9,7 +9,7 @@ type Props = {};
 
 export const Industries: FC<Props> = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className="container">
         <Title maxWidth={730} centered className={styles.title}>
           Работаем с <mark>ведущими брендами</mark> из&nbsp;различных отраслей
@@ -18,6 +18,6 @@ export const Industries: FC<Props> = () => {
           <img src={picture} alt="Отрасли работы" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
